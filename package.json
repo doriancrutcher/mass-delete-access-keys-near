@@ -1,0 +1,14 @@
+{
+  "name": "mass-key-deletion-recipie",
+  "version": "1.0.0",
+  "description": "Recipie for deleting multiple access keys at once for a particular account ",
+  "main": "mass-key-deletion-recipie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "near-api-js": "^0.44.2"
+  }
+}
