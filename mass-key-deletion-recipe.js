@@ -22,12 +22,11 @@ let config;
 // STEP 2 Choose your configuration.
 // set this variable to either "testnet" or "mainnet"
 // if you haven't used this before use testnet to experiment so you don't lose real tokens by deleting all your access keys
-const configSetting = "testnet";
+const configSetting = "set your configuration here ";
 
 // setting configuration based on input
 switch (configSetting) {
   case "mainnet":
-    console.log("Oranges are $0.59 a pound.");
     config = {
       networkId: "mainnet",
       keyStore, // optional if not signing transactions
@@ -60,7 +59,7 @@ const deleteKeyTool = async () => {
   const near = await connect(config);
 
   // STEP 4 enter your mainnet or testnet account name here!
-  const account = await near.account("mikeyc.testnet");
+  const account = await near.account("place your account name here!");
 
   // retrieve all access keys
   const allKeys = await account.getAccessKeys();
@@ -143,7 +142,7 @@ const deleteKeyTool = async () => {
   };
 
   // STEP 6 continued.. uncomment the one you want to use
-  deleteFunctionCallKeys();
+  // deleteFunctionCallKeys();
   // deleteFullAccessKeys()
   // deleteAllButASpecifiedKey(publicKeyToDelete);
 
